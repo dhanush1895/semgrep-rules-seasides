@@ -1,0 +1,12 @@
+rules:
+  - id: some
+    patterns:
+    - pattern-inside: |
+        def $X($ID):
+          ...
+    - pattern: return create_query("..."+ $ID +"...") 
+        
+    message: Setting a password on $MODEL
+    languages:
+      - python
+    severity: WARNING
