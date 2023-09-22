@@ -1,0 +1,10 @@
+#Challenge 4
+
+rules:
+  - id: docs-metavariable-message-example
+    pattern: jwt.encode(payload, ..., algorithm='none')  
+    
+    message: Daniel Thotapalli(dhanush1895)
+    languages:
+      - python
+    severity: WARNING
