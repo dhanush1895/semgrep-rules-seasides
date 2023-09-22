@@ -1,0 +1,7 @@
+rules:
+  - id: APP DEBUG
+    pattern: app.debug = True
+    message: App Debug is set to TRUE
+    languages:
+      - python
+    severity: High
