@@ -1,0 +1,14 @@
+rules:
+  - id: daniel
+    patterns:
+    - pattern-inside: |
+        def $X(data):
+          ...
+    - pattern-either:
+        - pattern: return hashlib.md5(...).hexdigest()
+        - pattern: return hashlib.sha1(...).hexdigest()
+
+    message: Setting a password on $MODEL
+    languages:
+      - python
+    severity: WARNING
